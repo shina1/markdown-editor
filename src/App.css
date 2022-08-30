@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+:root {
+  --very-darK: #151619;
+  --slight-dark: #1d1f22;
+  --semi-dark: #2b2d31;
+  --light-dark: #35393f;
+  --dark-harsh: #5a6069;
+  --semi-dark-hash: #7c8187;
+  --semi-light-hash: #c1c4cb;
+  --light-hash: #e4e4e4;
+  --smoke-white: #f5f5f5;
+  ---white:#fff;
+  --orange: #e46643;
+  --light-orange: #f39765;
+  --font-primary: 'Roboto', sans-serif;
+	--font-secondary: 'Roboto Slab', monospace;
+	--sidebar-transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 1345x;
+  margin: 0 auto;
+  transition: var(--sidebar-transition);
+  font-family: var(--font-primary);
+}
+
+.btn{
+  border: none;
+  background-color: var(--orange);
   color: white;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 12px 20px;
+	border-radius: 4px;
+	gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover{
+  background-color: var(--light-orange);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-body{
+  /* border: 2px solid blue; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.component-top{
+  width: 100%;
+  height: 40px;
+  padding:10px 0;
+  background-color: var(--semi-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.component-top > span{
+  color: #c1c4cb;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.component-top > img{
+  margin: 0 10px;
+  cursor: pointer;
+}
+/* github.com/Tajudeenazeez/markdown_notewriter */
+
+.openSiderbar{
+  transform: translate3d(250px, 0, 0);
+	transition: var(--sidebar-transition);
 }

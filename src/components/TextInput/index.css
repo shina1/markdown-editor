@@ -1,0 +1,34 @@
+.text-comp-container{
+    border-right: 1px solid #5a6069;
+    width: 50%;
+    min-height: 100vh;
+    /* padding: 0 5px; */
+}
+
+
+.text-container{
+    padding: 10px;
+}
+.text-container > textarea{
+    margin: 20px auto;
+    width: 99.2%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.text-container > textarea::-webkit-scrollbar{
+    /* box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    /* background-color: var(--light-orange);
+    width: 6px;
+    border-radius: 5px; */
+    display: none;
+
+}
+.text-container > textarea:focus{
+    border: none;
+}

@@ -1,0 +1,114 @@
+.preview-comp-container{
+    border-left: 1px solid #5a6069;
+    /* flex: 1; */
+    width: 50%;
+    min-height: 100vh;
+}
+
+.preview-body{
+    height: auto;
+    font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	/* line-height: 24px; */
+	padding: 20px;
+	padding-bottom: 55px;
+}
+.preview-body div > * {
+	margin-bottom: 10px;
+}
+
+.preview-body h1 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 42px;
+}
+.preview-body h2 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 37px;
+}
+.preview-body h3 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+}
+.preview-body h4 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
+.preview-body h5 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 21px;
+}
+.preview-body h6 {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--orange);
+}
+.preview-body p {
+	color: var(--semi-dark-hash);
+}
+.preview-body ol {
+	padding-left: 24px;
+}
+.preview-body ul {
+	padding-left: 24px;
+}
+.preview-body li {
+	list-style-position: inside;
+}
+.preview-body li::marker {
+	color: var(--orange);
+}
+.preview-body pre> code{
+    display: block;
+    /* width: 72%; */
+    font-family: 'Roboto Slab';
+	font-style: normal;
+    font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	background: var(--smoke-white);
+	color: var(--light-dark);
+	border-radius: 4px;
+	padding: 24px;
+}
+.preview-body blockquote p {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	background: var(--smoke-white);
+	color: var(--light-dark);
+	border-radius: 4px;
+	padding: 24px;
+	border-left: 4px solid var(--orange);
+}
+
+.preview-body pre {
+	background-color: var(--color-200);
+	color: var(--color-700);
+	padding: 14px;
+	border-radius: 4px;
+}
+.preview-body pre p {
+	color: var(--color-700);
+}
