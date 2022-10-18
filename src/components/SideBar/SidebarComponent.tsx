@@ -12,11 +12,11 @@ type SidebarComponentType = {
 
 const SidebarComponent: React.FC<SidebarComponentType> = ({isOpen}) => {
 
-  useEffect(()=> {
-    const sideBarToggle = window.document.querySelector('.sidebar-container') as HTMLElement;
-    sideBarToggle.classList.toggle('active')
+  // useEffect(()=> {
+  //   const sideBarToggle = window.document.querySelector('.sidebar-container') as HTMLElement;
+  //   sideBarToggle.classList.toggle('active')
     
-  }, [isOpen])
+  // }, [isOpen])
   return (
     <div className='sidebar-container'>
       <div className="sidebar-top">

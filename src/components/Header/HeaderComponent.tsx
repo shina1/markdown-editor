@@ -13,8 +13,8 @@ const HeaderComponent : React.FC<HeaderComponentType> = ({isOpen, setIsOpen}) =>
   
   return (
     <div className='header-container'>
-      <div className="hambuger-bar">
-          <div className="inside-bar" onClick={()=> setIsOpen(!isOpen)}>
+      <div className="hambuger-bar" onClick={()=> setIsOpen(!isOpen)}>
+          <div className="inside-bar" >
             <div className="bar bar1"></div>
             <div className="bar bar2"></div>
             <div className="bar bar3"></div>
